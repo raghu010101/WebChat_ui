@@ -1,0 +1,311 @@
+$primary-color: #1976D2;
+$secondary-color: #424242;
+
+$breakpoint-sm: 600px;
+$breakpoint-md: 960px;
+$breakpoint-lg: 1264px;
+$breakpoint-xl: 1904px;
+.w {
+  &_25 {
+    width: 25%;
+  }
+  &_35 {
+    width: 35%;
+  }
+  &_50 {
+    width: 50%;
+  }
+  &_60 {
+    width: 60%;
+  }
+  &_70 {
+    width: 70%;
+  }
+  &_75 {
+    width: 75%;
+  }
+  &_80 {
+    width: 80%;
+  }
+  &_100 {
+    width: 100%;
+  }
+}
+.border {
+  border: 1px solid #eee;
+  &_top {
+    border-top: 1px solid #eee;
+  }
+  &_bottom {
+    border-bottom: 1px solid #eee !important;
+  }
+  &_left {
+    border-left: 1px solid #eee;
+  }
+  &_grey {
+    border: 1px solid #c0c0c0 !important;
+  }
+  &_green {
+    border: 2px solid #32ba7c !important;
+  }
+}
+.bgTransparent {
+  background-color: transparent !important;
+}
+.bgwhite {
+  background-color: #fff !important;
+}
+
+.addressWrapper .v-list-item--active {
+  border: 2px solid #32ba7c !important;
+}
+.serviceWrapper {
+  & .activeRadio {
+    border: 2px solid #0965da !important;
+    & .v-input--selection-controls__ripple::after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border: 5px solid;
+      border-radius: 5px;
+      inset: 0;
+      margin: auto;
+    }
+    &.segmentCardBg {
+      background-color: #e5ecff;
+    }
+  }
+}
+.full-height {
+  min-height: 70vh;
+  max-height: 100vh; /* Full viewport height */
+}
+.position {
+  &_absolute {
+    position: absolute;
+  }
+  &_relative {
+    position: relative;
+  }
+  &_sticky {
+    position: sticky;
+  }
+  &_fixed {
+    position: fixed;
+  }
+  &_left {
+    left: 0;
+  }
+  &_right {
+    right: 0;
+  }
+}
+
+
+
+.customInput {
+  .v-input--dense {
+    .v-input__slot {
+      height: 45px !important;
+      & .v-text-field__slot,
+      & .v-select__slot {
+        margin-top: 3px;
+      }
+    }
+  }
+  .v-text-field {
+    .v-input__slot {
+      background: #fff !important;
+      border-color: #d7d7d7 !important;
+      border-radius: 6.52px !important;
+    }
+    .v-input__control {
+      border-radius: 6.52px !important;
+    }
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.customScrollBar {
+  &::-webkit-scrollbar {
+    width: 6px;
+
+    &-track {
+      background: #f1f1f1;
+    }
+
+    &-thumb {
+      background: #888;
+      border-radius: 10px;
+      &:hover {
+        background: #555;
+      }
+    }
+  }
+}
+
+.dashedBorder {
+  border-style: dashed !important;
+  border-color: #000 !important;
+}
+.alertBorder {
+  border-right: 1px dashed;
+  border-top: 1px dashed;
+  border-bottom: 1px dashed;
+  border-color: #ff5252 !important;
+}
+.warningColor {
+  border-color: #fb8c00 !important;
+  border-right: 1px dashed;
+  border-top: 1px dashed;
+  border-bottom: 1px dashed;
+}
+
+.headerMain {
+  height: 60px;
+}
+.backButton {
+  background-color: rgba(9, 101, 218, 0.1) !important;
+}
+.bankInfoCard {
+  border: 1px dashed grey !important;
+  border-width: 1px !important;
+  background: rgb(202, 244, 232, 50%) !important;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+.floatButton {
+  position: absolute;
+  bottom: 25px;
+  right: 0;
+  left: 0;
+}
+.customContainer {
+  max-width: 1350px !important;
+  width: 100%;
+  padding: 12px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.imgResponsive {
+  height: auto;
+}
+.revieWrapper {
+  .v-expansion-panel {
+    &::before {
+      box-shadow: none !important;
+      border-radius: unset !important;
+      border-bottom: 2px solid !important;
+    }
+    &.ErrorBorder::before {
+      border-color: #ff5252 !important;
+    }
+    &.SuccessBorder::before {
+      border-color: #32ba7c !important;
+    }
+  }
+  .v-expansion-panel-content__wrap {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+.col {
+  &-12 {
+    max-width: 100% !important;
+  }
+}
+
+.appWrapper {
+  .elevation-0 {
+    box-shadow: unset !important;
+  }
+}
+
+.customCarousel {
+  overflow: visible !important;
+  & .v-carousel__controls {
+    bottom: -50px;
+
+    & .v-item-group {
+      & .v-btn--icon {
+        color: #1976d2 !important;
+        opacity: 1 !important;
+
+        & .v-icon {
+          opacity: 1 !important;
+        }
+      }
+    }
+  }
+}
+
+.custom-form {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+}
+
+.custom-input {
+  border-radius: 8px;
+  border-width: 1px;
+}
+
+.custom-btn {
+  border-radius: 8px;
+  margin-top: 16px;
+}
+.v-chip:hover::before {
+  opacity: 0 !important;
+}
+@mixin responsive-font {
+  font-size: 14px;
+  @media (min-width: $breakpoint-sm) { font-size: 16px; }
+  @media (min-width: $breakpoint-md) { font-size: 18px; }
+  @media (min-width: $breakpoint-lg) { font-size: 20px; }
+  @media (min-width: $breakpoint-xl) { font-size: 22px; }
+}
+
+.secondary-list-item {
+  background-color: $primary-color;
+  color: white;
+  @include responsive-font;
+}
+
+.v-navigation-drawer {
+  @include responsive-font;
+}
+
+.hide-on-large {
+  @media (min-width: $breakpoint-md) {
+    display: none;
+  }
+}
+
+.show-on-large {
+  @media (min-width: $breakpoint-md) {
+    display: block !important;
+  }
+}
+
+.hide-on-small {
+  @media (max-width: $breakpoint-md) {
+    display: none;
+  }
+}
+.chat-bg {
+  // background-image: url('/images/bg-chat.webp'); 
+  background-image: url('/images/bgimg.jpg'); /* Replace with your image path */
+
+  // background-size: cover; /* Ensure the background image covers the entire card */
+  // backdrop-filter: blur(10px);
+  // backdrop-filter: saturation(0%);
+  background-size: contain;
+}

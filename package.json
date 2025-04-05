@@ -1,0 +1,30 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@lottiefiles/lottie-player": "^2.0.4",
+    "@mdi/font": "^7.4.47",
+    "@nuxtjs/dotenv": "^1.4.2",
+    "@vueuse/core": "^10.11.0",
+    "axios": "^1.7.2",
+    "cropperjs": "^1.6.2",
+    "lottie-web": "^5.12.2",
+    "nuxt": "^3.12.3",
+    "pdf-lib": "^1.17.1",
+    "sass": "^1.77.6",
+    "socket.io-client": "^4.7.5",
+    "vue": "latest",
+    "vuetify": "^3.6.11"
+  },
+  "devDependencies": {
+    "nuxt-3-vuetify": "^1.1.1"
+  }
+}
